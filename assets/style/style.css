@@ -95,7 +95,6 @@ html {
     padding-bottom: 70px;
 }
 .main__left {
-    padding-top: 100px;
     width: 450px;
     margin-left: 150px;
 }
@@ -412,9 +411,6 @@ html {
         margin-left: 20px;
     }
     .menu {display: none;}
-    .main__left {
-        margin-left: 20px;
-    }
     .main__right {
         margin-left: 20px;
     }
@@ -430,9 +426,6 @@ html {
     }
     .main__right-item {
         font-size: 10px;
-    }
-    .right__text {
-        width: 10px;
     }
     .right__number {
         font-size: 10px;
@@ -469,9 +462,28 @@ html {
     .advantages__way-item{
         padding-left: 0;
     }
+    .main__left-title {
+        margin-top: -20px;
+        font-size: 24px;
+    }
+    .main__left-subtitle {
+        font-size: 18px;
+        width: 250px;
+        line-height: 28px;
+    }
+    .main__right-item{
+        margin-left: 40px;
+    }
+    .border{
+        height: 25px;
+        width: 30px;
+    }
   }
 
   @media (max-width: 1024px) {
+    .main__left {
+        margin-top: 80px;
+    }
     .advantages__way {
         padding-left: 0;
     }
@@ -491,3 +503,146 @@ html {
         margin-left: 750px;
     }
   }
+
+
+  @media (max-width: 769px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__left{
+        margin-top: -100px;
+        margin: 0 auto;
+        width: 400px;
+    }
+    .main__left-title {
+        margin-top: -20px;
+        font-size: 24px;
+        text-align: center;
+    }
+    .main__left-subtitle {
+        font-size: 18px;
+        width: 350px;
+        line-height: 28px;
+        text-align: center;
+        margin: 1em;
+    }
+    .main__right {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        margin-right: 0;
+        width: 700px;
+    }
+    .main__right-item {
+        display: flex;
+        flex-direction: column;
+        width: 60px;
+        text-align: center;
+    }
+    .right__number {
+        font-size: 20px;
+    }
+    .right__text {
+        font-size: 16px;
+        font-weight: 400;
+        width: 120px;
+    }
+    .border{
+        height: 25px;
+        width: 30px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .main__right {
+        width: 190px;
+        margin: 0;
+    }
+    .right__text {
+        width: 100px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .slider__items-item {
+        width: 280px;
+    }
+    .slider__items-item>img {
+        width: 280px;
+    }
+    #carousel {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .main__left{
+        margin-top: -100px;
+        margin: 0 auto;
+        width: 300px;
+    }
+    .main__left-title {
+        margin-top: -20px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .main__left-subtitle {
+        font-size: 16px;
+        width: 280px;
+        line-height: 28px;
+        text-align: center;
+        margin: 1em;
+    }
+    .main__right {
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .main__right-item {
+        margin-left: 0;
+        margin-top: 70px;
+    }
+    .main__right-item:nth-child(1) {
+        margin-top: 0;
+    }
+    .main__right-item:nth-child(3) {
+        margin-top: 0;
+    }
+    .right__text {
+        font-size: 12px;
+        line-height: 16px;
+        width: 80px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer{
+        text-align: center;
+        line-height: 25px;
+    }
+    .footer__text {
+        margin-right: 0;
+    }
+    .politic {
+        margin-right: 0;
+    }
+    .footer__info {
+        margin-top: 10px;
+        line-height: 10px;
+        text-align: center;
+    }
+    .project {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form__subtitle {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+  }
+
