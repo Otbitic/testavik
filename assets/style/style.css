@@ -52,8 +52,8 @@ html {
 }
 .logo {
     display: flex;
-
     align-items: center;
+    border: none;
 }
 .logo__text {
     padding-left: 40px;
