@@ -153,6 +153,8 @@ html {
     overflow: hidden;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 .slider {
     background-color: #1E1D1A;
@@ -174,15 +176,20 @@ html {
     display: none;
 }
 .slider__items-item {
+    padding-left: 40px;
     align-items: center;
-    margin-left: 40px;
 }
+
+.slider__items-item:nth-child(1) {
+    padding-left: 0px;
+}
+
 .slider__item-title{
     font-size: 28px;
 }
 .slider__items-item>img {
-    width: 600px;
-    height: 460px;
+    width: 400px;
+    height: 300px;
 }
 .slider__item-price {
     display: flex;
