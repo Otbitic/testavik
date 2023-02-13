@@ -553,6 +553,12 @@ html {
         width: 30px;
     }
   }
+  @media (max-width: 769px) {
+    .footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+  }
 
   @media (max-width: 425px) {
     .main__right {
@@ -571,6 +577,36 @@ html {
         width: 280px;
     }
     #carousel {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer{
+        text-align: center;
+        line-height: 25px;
+    }
+    .footer__text {
+        margin-right: 0;
+    }
+    .politic {
+        margin-right: 0;
+    }
+    .footer__info {
+        margin-top: 10px;
+        line-height: 10px;
+        text-align: center;
+    }
+    .project {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form__subtitle {
         margin-left: 20px;
         margin-right: 20px;
     }
