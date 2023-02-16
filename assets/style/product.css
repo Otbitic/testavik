@@ -283,14 +283,14 @@ html {
 }
 
 .advantages__way {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     padding-left: 150px;
     padding-right: 150px;
 }
 
 .advantages__way-item {
     margin-top: 90px;
-    position: absolute;
     width: 200px;
     transition: .2s;
 }
@@ -309,21 +309,11 @@ html {
 
 }
 
-.material {
-    margin-left: 250px;
-}
-
 .command {
-    margin-left: 550px;
     margin-top: 200px;
 }
 
-.fast {
-    margin-left: 850px;
-}
-
 .clean {
-    margin-left: 1150px;
     margin-top: 200px;
 }
 
@@ -340,7 +330,6 @@ html {
     width: 250px;
     border-radius: 40px;
     border: 5px solid #392720;
-    margin-left: 40px;
     margin-top: 5px;
 }
 
@@ -352,7 +341,6 @@ html {
     color: white;
     border: 5px solid #392720;
     cursor: pointer;
-    margin-left: 40px;
     margin-top: 5px;
 }
 
@@ -398,3 +386,60 @@ html {
     font-size: 12px;
     font-weight: 400;
 }
+
+@media (max-width: 1024px) {
+    .main {
+
+    }
+    .main__right {
+        border: none;
+        poa
+    }
+}
+    
+
+@media (max-width: 768px) {
+    .main {
+        display: block;
+        margin: 0 auto;
+    }
+    .header {
+        margin-left: 20px;
+    }
+    .menu__item-links {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        line-height: 25px;
+        font-size: 10px;
+    }
+    .politic {
+        margin-right: 0;
+    }
+    .footer__info {
+        margin-top: 10px;
+        line-height: 10px;
+        text-align: center;
+    }
+    .project {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form__subtitle {
+        margin-left: 20px;
+    }
+    .footer__info-subtitle {
+        font-size: 8px;
+    }
+    .advantages {
+        display: none;
+    }
+}
+

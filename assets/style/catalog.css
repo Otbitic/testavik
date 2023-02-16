@@ -331,9 +331,6 @@ html {
             grid-template-columns: repeat(1, 0fr);
             grid-template-rows: repeat(8, 380px);
         }
-        .menu {
-            display: none;
-        }
         .header{
             margin-left: 15px;
         }
@@ -343,9 +340,6 @@ html {
     }
 
     @media (max-width: 850px) {
-        .menu {
-            display: none;
-        }
         .header{
             margin-left: 15px;
         }
@@ -373,13 +367,9 @@ html {
             justify-content: space-between;
             padding-left: 0;
             padding-right: 0;
-        }
-        .footer{
             text-align: center;
             line-height: 25px;
-        }
-        .footer__text {
-            margin-right: 0;
+            font-size: 10px;
         }
         .politic {
             margin-right: 0;
@@ -395,11 +385,20 @@ html {
         }
         .form__subtitle {
             margin-left: 20px;
-            margin-right: 20px;
+        }
+        .footer__info-subtitle {
+            font-size: 8px;
         }
     }
 
     @media (max-width: 600px) {
+        .logo__text {
+            display: none;
+        }
+        .menu__item-links {
+            font-size: 12px;
+            padding-left: 10px;
+        }
         .main__item {
             grid-template-columns: repeat(1, 0fr);
             grid-template-rows: repeat(8, 80px);
