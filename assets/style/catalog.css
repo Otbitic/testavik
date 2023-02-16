@@ -181,7 +181,6 @@ html {
 
 .item__price {
     font-size: 26px;
-    font-weight: 600;
 }
 
 .item__price-text {
@@ -199,6 +198,7 @@ html {
     padding-top: 50px;
     margin-top: 100px;
     height: 600px;
+    position: relative;
 }
 
 .advantages__title {
@@ -208,13 +208,14 @@ html {
 
 .advantages__way {
     position: relative;
+    display: flex;
+    justify-content: space-between;
     padding-left: 150px;
     padding-right: 150px;
 }
 
 .advantages__way-item {
     margin-top: 90px;
-    position: absolute;
     width: 200px;
     transition: .2s;
 }
@@ -233,21 +234,11 @@ html {
 
 }
 
-.material {
-    margin-left: 250px;
-}
-
 .command {
-    margin-left: 550px;
     margin-top: 200px;
 }
 
-.fast {
-    margin-left: 850px;
-}
-
 .clean {
-    margin-left: 1150px;
     margin-top: 200px;
 }
 
@@ -264,7 +255,7 @@ html {
     width: 250px;
     border-radius: 40px;
     border: 5px solid #392720;
-    margin-left: 40px;
+
     margin-top: 5px;
 }
 
@@ -276,7 +267,6 @@ html {
     color: white;
     border: 5px solid #392720;
     cursor: pointer;
-    margin-left: 40px;
     margin-top: 5px;
 }
 
@@ -334,4 +324,112 @@ html {
     margin: 0 auto;
     margin-top: 70px;
     }
+    }
+
+    @media (max-width: 1025px) {
+        .main__item {
+            grid-template-columns: repeat(1, 0fr);
+            grid-template-rows: repeat(8, 380px);
+        }
+        .menu {
+            display: none;
+        }
+        .header{
+            margin-left: 15px;
+        }
+        .advantages {
+            margin-top: 170px;
+        }
+    }
+
+    @media (max-width: 850px) {
+        .menu {
+            display: none;
+        }
+        .header{
+            margin-left: 15px;
+        }
+    }
+
+    @media (max-width: 769px) {
+        .main__item {
+            grid-template-columns: repeat(1, 0fr);
+            grid-template-rows: repeat(8, 380px);
+        }
+        .main {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .advantages__way {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .advantages {
+            margin-top: 170px;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .footer{
+            text-align: center;
+            line-height: 25px;
+        }
+        .footer__text {
+            margin-right: 0;
+        }
+        .politic {
+            margin-right: 0;
+        }
+        .footer__info {
+            margin-top: 10px;
+            line-height: 10px;
+            text-align: center;
+        }
+        .project {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .form__subtitle {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .main__item {
+            grid-template-columns: repeat(1, 0fr);
+            grid-template-rows: repeat(8, 80px);
+        }
+        .main {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .item__filter {
+            width: 200px;
+        }
+        .advantages {
+            display: none;
+        }
+        .form__title {
+            margin-top: 170px;
+        }
+        .filtr__btn {
+            font-size: 12px;
+            width: 250px;
+        }
+        .item__filter-text {
+            font-size: 16px;
+        }
+        .item__price {
+            font-size: 12px;
+        }
+        .item__price-text {
+            width: 5px;
+            font-size: 8px;
+            line-height: 10px;
+        }
     }
