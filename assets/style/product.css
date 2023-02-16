@@ -389,19 +389,46 @@ html {
 
 @media (max-width: 1024px) {
     .main {
-
+        position: relative;
+        height: 900px;
     }
     .main__right {
         border: none;
-        poa
+        position: absolute;
+        bottom: 0;
+    }
+    .right__image {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;        
+    }
+    .right__image>img {
+        padding-left: 10px;
     }
 }
-    
 
 @media (max-width: 768px) {
     .main {
         display: block;
         margin: 0 auto;
+    }
+    .main__right {
+        margin-top: 50px;
+    }
+    .main__left {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main__left>img {
+        height: 300px;
+    }
+    .right__btn {
+        width: 200px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .main__right {
+        margin-top: -200px;
     }
     .header {
         margin-left: 20px;
@@ -442,4 +469,3 @@ html {
         display: none;
     }
 }
-
