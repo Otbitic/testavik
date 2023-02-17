@@ -289,15 +289,20 @@ html {
     font-weight: 700;
 }
 
+.advantages__title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
 .advantages__way {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     padding-left: 150px;
     padding-right: 150px;
 }
 
 .advantages__way-item {
     margin-top: 90px;
-    position: absolute;
     width: 200px;
     transition: .2s;
 }
@@ -316,21 +321,11 @@ html {
 
 }
 
-.material {
-    margin-left: 250px;
-}
-
 .command {
-    margin-left: 550px;
     margin-top: 200px;
 }
 
-.fast {
-    margin-left: 850px;
-}
-
 .clean {
-    margin-left: 1150px;
     margin-top: 200px;
 }
 
@@ -462,12 +457,6 @@ html {
   }
 
   @media (max-width: 1440px) {
-    .advantages__way {
-        padding-left: 0;
-    }
-    .advantages__way-item{
-        padding-left: 0;
-    }
     .main__left-title {
         margin-top: -20px;
         font-size: 24px;
@@ -489,24 +478,6 @@ html {
   @media (max-width: 1024px) {
     .main__left {
         margin-top: 80px;
-    }
-    .advantages__way {
-        padding-left: 0;
-    }
-    .advantages__way-item{
-        padding-left: 0;
-    }
-    .material {
-        margin-left: 50px;
-    }
-    .command {
-        margin-left: 300px;
-    }
-    .fast {
-        margin-left: 550px;
-    }
-    .clean {
-        margin-left: 750px;
     }
   }
 
