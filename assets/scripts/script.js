@@ -1,5 +1,8 @@
-$(document).ready(function () {
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    items:3,
+    loop:true,
   });
 });
+
+

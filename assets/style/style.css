@@ -141,13 +141,13 @@ html {
 .wrapper__slider {
     margin-top: -5px;
     background-color: #1E1D1A;
-    height: 400px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
-#wrapper {
+.owl-carousel {
     margin: 0 auto;
     width: 100%;
     max-width: 1920px;
-    position: relative;
 }
 #carousel {
     overflow: hidden;
@@ -155,11 +155,6 @@ html {
     scrollbar-width: none;
     margin-left: 150px;
     margin-right: 150px;
-}
-.slider {
-    background-color: #1E1D1A;
-    padding-top: 30px;
-    padding-bottom: 50px;
 }
 .slider__items {
     display: flex;
@@ -172,18 +167,13 @@ html {
     padding-right: 20px;
     color: white;
 }
-.none {
-    display: none;
-}
 .slider__items-item {
     padding-left: 40px;
     align-items: center;
 }
-
 .slider__items-item:nth-child(1) {
     padding-left: 0px;
 }
-
 .slider__item-title{
     font-size: 28px;
 }
