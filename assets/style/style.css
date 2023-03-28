@@ -532,15 +532,11 @@ html {
         font-size: 12px;
         line-height: 16px;
     }
-    .slider__items-item {
-        width: 280px;
+    .wrapper__slider {
+        display: none;
     }
-    .slider__items-item>img {
-        width: 280px;
-    }
-    #carousel {
-        margin-left: 20px;
-        margin-right: 20px;
+    .form {
+        margin-top: 50px;
     }
   }
 

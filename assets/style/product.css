@@ -182,28 +182,12 @@ html {
     height: 150px;
     padding-top: 20px;
 }
-
 .wrapper__slider {
-    margin-top: 70px;
+    padding-top: 20px;
+    margin-top: 50px;
     background-color: #1E1D1A;
-}
-#wrapper {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1920px;
-    position: relative;
-}
-#carousel {
-    overflow: hidden;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-.slider {
-    background-color: #1E1D1A;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 60px;
 }
 .slider__items {
     display: flex;
@@ -215,9 +199,6 @@ html {
     justify-content: space-between;
     padding-right: 20px;
     color: white;
-}
-.none {
-    display: none;
 }
 .slider__items-item {
     align-items: center;
@@ -407,6 +388,10 @@ html {
     .right__image>img {
         padding-left: 10px;
     }
+    .slider__items-item>img {
+        width: 200px;
+        height: 150px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -442,9 +427,14 @@ html {
         font-size: 16px;
         padding-left: 10px;
     }
-    #carousel {
-        margin-left: 25px;
-        margin-right: 25px;
+    .slider__item-title {
+        font-size: 24px;
+    }
+    .item__price {
+        font-size: 12px;
+    }
+    .item__price-text {
+        font-size: 12px;
     }
     .advantages__way {
         padding-left: 25px;
@@ -490,6 +480,12 @@ html {
     }
     .wrapper__slider {
         margin-top: 200px;
+    }
+    .wrapper__slider {
+        display: none;
+    }
+    .form {
+        margin-top: 160px;
     }
     .footer {
         display: flex;
