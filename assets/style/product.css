@@ -395,6 +395,10 @@ html {
 }
 
 @media (max-width: 768px) {
+    .menu__item-links {
+        font-size: 12px;
+        padding-left: 10px;
+    }
     .main {
         display: block;
         margin: 0 auto;
@@ -422,10 +426,6 @@ html {
     }
     .header {
         margin-left: 20px;
-    }
-    .menu__item-links {
-        font-size: 16px;
-        padding-left: 10px;
     }
     .slider__item-title {
         font-size: 24px;
@@ -545,9 +545,6 @@ html {
     }
 }
 @media (max-width: 321px) {
-    .menu__item-links {
-        font-size: 12px;
-    }
     .main {
         position: relative;
     }

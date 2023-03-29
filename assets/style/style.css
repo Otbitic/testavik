@@ -399,10 +399,6 @@ html {
     .logo__text {
         display: none;
     }
-    .menu__item-links {
-        font-size: 12px;
-        padding-left: 10px;
-    }
     .main__right {
         margin-left: 20px;
     }
@@ -474,6 +470,10 @@ html {
 
 
   @media (max-width: 769px) {
+    .menu__item-links {
+        font-size: 12px;
+        padding-left: 10px;
+    }
     .main {
         display: flex;
         flex-direction: column;
